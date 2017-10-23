@@ -1,0 +1,245 @@
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    body {
+        background: #2d2c41;
+        font-family: 'Open Sans', Arial, Helvetica, Sans-serif, Verdana, Tahoma;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    a {
+        color: #b63b4d;
+        text-decoration: none;
+    }
+
+    /** =======================
+     * Contenedor Principal
+     ===========================*/
+    h1 {
+        color: #FFF;
+        font-size: 24px;
+        font-weight: 400;
+        text-align: center;
+        margin-top: 80px;
+    }
+
+    h1 a {
+        color: #c12c42;
+        font-size: 16px;
+    }
+
+    .accordion {
+        width: 100%;
+        max-width: 80%;
+        margin: 30px auto 20px;
+        background: #FFF;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+    }
+
+    .accordion .link {
+        cursor: pointer;
+        display: block;
+        padding: 15px 15px 15px 42px;
+        color: #4D4D4D;
+        font-size: 14px;
+        font-weight: 700;
+        border-bottom: 1px solid #CCC;
+        position: relative;
+        -webkit-transition: all 0.4s ease;
+        -o-transition: all 0.4s ease;
+        transition: all 0.4s ease;
+    }
+
+    .accordion li:last-child .link {
+        border-bottom: 0;
+    }
+
+    .accordion li i {
+        position: absolute;
+        top: 16px;
+        left: 12px;
+        font-size: 18px;
+        color: #595959;
+        -webkit-transition: all 0.4s ease;
+        -o-transition: all 0.4s ease;
+        transition: all 0.4s ease;
+    }
+
+    .accordion li i.fa-chevron-down {
+        right: 12px;
+        left: auto;
+        font-size: 16px;
+    }
+
+    .accordion li.open .link {
+        color: #b63b4d;
+    }
+
+    .accordion li.open i {
+        color: #b63b4d;
+    }
+    .accordion li.open i.fa-chevron-down {
+        -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+
+    .accordion li.default .submenu {display: block;}
+    /**
+     * Submenu
+     -----------------------------*/
+    .submenu {
+        display: none;
+        background: #444359;
+        font-size: 14px;
+    }
+
+    .submenu li {
+        border-bottom: 1px solid #4b4a5e;
+    }
+
+    .submenu a {
+        display: block;
+        text-decoration: none;
+        color: #d9d9d9;
+        padding: 12px;
+        padding-left: 42px;
+        -webkit-transition: all 0.25s ease;
+        -o-transition: all 0.25s ease;
+        transition: all 0.25s ease;
+    }
+
+    .submenu a:hover {
+        background: #b63b4d;
+        color: #FFF;
+    }
+
+
+</style>
+<div class="row">
+    <div class="col-md-8 col-md-offset-2">
+<div style="border: 1px solid #d9534f; padding: 30px;  border-left-color: #d9534f;  border-left-width: 5px; margin-bottom: 5%;">
+    <p class="text-center "><h4 style="color: #d9534f;">GATE CSE SYLLABUS</h4></p></div>
+        </div></div>
+<ul id="accordion" class="accordion">
+    <li>
+        <div class="link"><i class="fa fa-code"></i>GENERAL APTITUDE<i class="fa fa-chevron-down"></i></div>
+        <ul class="submenu">
+            <li><a href="#">Verbal Ability: English grammar, sentence completion, verbal analogies, word groups, instructions, critical reasoning and verbal deduction.
+                </a></li>
+            <li><a href="#">Numerical Ability: Numerical computation, numerical estimation, numerical</a></li>
+        </ul>
+    </li>
+    <li>
+        <div class="link"><i class="fa fa-code"></i>ENGINEERING MATHEMATICS<i class="fa fa-chevron-down"></i></div>
+        <ul class="submenu">
+            <li><a href="#">Discrete Mathematics: Propositional and first order logic. Sets, relations, functions, partial orders and lattices. Groups. Graphs: connectivity, matching, coloring. Combinatorics: counting, recurrence relations,generating functions.</a></li>
+            <li><a href="#"> Linear Algebra: Matrices, determinants, system of linear equations, eigenvalues and eigenvectors, LU decomposition.</a></li>
+            <li><a href="#"> Calculus: Limits, continuity and differentiability. Maxima and minima. Mean value theorem. Integration.</a></li>
+            <li><a href="#"> Probability: Random variables. Uniform, normal, exponential, poisson and binomial distributions. Mean, median, mode and standard deviation. Conditional probability and Bayes theorem.</a></li>
+        </ul>
+    </li>
+    <li>
+        <div class="link"><i class="fa fa-code"></i>DIGITAL LOGIC<i class="fa fa-chevron-down"></i></div>
+        <ul class="submenu">
+            <li><a href="#">Boolean algebra. Combinational and sequential circuits. Minimization. Number representations and computer arithmetic (fixed and floating point).</a></li>
+        </ul>
+    </li>
+    <li>
+        <div class="link"><i class="fa fa-code"></i>COMPUTER ORGANISATION AND ARCHITECTURE<i class="fa fa-chevron-down"></i></div>
+        <ul class="submenu">
+            <li><a href="#">Machine instructions and addressing modes. ALU, data‐path and control unit. Instruction pipelining. Memory hierarchy: cache, main memory and secondary storage; I/O interface (interrupt and DMA mode).</a></li>
+
+        </ul>
+    </li>
+    <li>
+        <div class="link"><i class="fa fa-code"></i>PROGRAMMING AND DATA STRUCTURES<i class="fa fa-chevron-down"></i></div>
+        <ul class="submenu">
+            <li><a href="#">Programming in C. Recursion. Arrays, stacks, queues, linked lists, trees, binary search trees, binary heaps, graphs.</a></li>
+
+        </ul>
+    </li>
+    <li>
+        <div class="link"><i class="fa fa-code"></i>ALGORITHMS<i class="fa fa-chevron-down"></i></div>
+        <ul class="submenu">
+            <li><a href="#">Searching, sorting, hashing. Asymptotic worst case time and space complexity. Algorithm design techniques: greedy, dynamic programming and divide‐and‐conquer. Graph search, minimum spanning trees, shortest paths.</a></li>
+
+        </ul>
+    </li>
+    <li>
+        <div class="link"><i class="fa fa-code"></i>OPERATING SYSTEMS<i class="fa fa-chevron-down"></i></div>
+        <ul class="submenu">
+            <li><a href="#">Processes, threads, inter‐process communication, concurrency and synchronization. Deadlock. CPU scheduling. Memory management and virtual memory. File systems.</a></li>
+
+        </ul>
+    </li>
+    <li>
+        <div class="link"><i class="fa fa-code"></i>THEORY OF COMPUTATION<i class="fa fa-chevron-down"></i></div>
+        <ul class="submenu">
+            <li><a href="#">Regular expressions and finite automata. Context-free grammars and push-down automata. Regular and contex-free languages, pumping lemma. Turing machines and undecidability.</a></li>
+
+        </ul>
+    </li>
+    <li>
+        <div class="link"><i class="fa fa-code"></i>COMPILER DESIGN<i class="fa fa-chevron-down"></i></div>
+        <ul class="submenu">
+            <li><a href="#">Lexical analysis, parsing, syntax-directed translation. Runtime environments. Intermediate code generation.</a></li>
+
+        </ul>
+    </li>
+    <li>
+        <div class="link"><i class="fa fa-code"></i>DATABASES<i class="fa fa-chevron-down"></i></div>
+        <ul class="submenu">
+            <li><a href="#">ER‐model. Relational model: relational algebra, tuple calculus, SQL. Integrity constraints, normal forms. File organization, indexing (e.g., B and B+ trees). Transactions and concurrency control.</a></li>
+
+        </ul>
+    </li>
+    <li>
+        <div class="link"><i class="fa fa-code"></i>COMPUTER NETWORK<i class="fa fa-chevron-down"></i></div>
+        <ul class="submenu">
+            <li><a href="#">Concept of layering. LAN technologies (Ethernet). Flow and error control techniques, switching. IPv4/IPv6, routers and routing algorithms (distance vector, link state). TCP/UDP and sockets, congestion control. Application layer protocols (DNS, SMTP, POP, FTP, HTTP). Basics of Wi-Fi. Network security: authentication, basics of public key and private key cryptography, digital signatures and certificates, firewalls.</a></li>
+
+        </ul>
+    </li>
+
+</ul>
+<script>
+$(function() {
+var Accordion = function(el, multiple) {
+this.el = el || {};
+this.multiple = multiple || false;
+
+// Variables privadas
+var links = this.el.find('.link');
+// Evento
+links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
+}
+
+Accordion.prototype.dropdown = function(e) {
+var $el = e.data.el;
+$this = $(this),
+$next = $this.next();
+
+$next.slideToggle();
+$this.parent().toggleClass('open');
+
+if (!e.data.multiple) {
+$el.find('.submenu').not($next).slideUp().parent().removeClass('open');
+};
+}
+
+var accordion = new Accordion($('#accordion'), false);
+});
+</script>
